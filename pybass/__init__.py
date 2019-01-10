@@ -1,2 +1,2 @@
-from pybass import *
-from pybass_aac import *
+from pybass import *  # noqa
+from pybass_aac import *  # noqa
