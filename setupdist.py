@@ -33,7 +33,7 @@ def increase_version_patch():
         file.write('\n'.join(lines))
 
 
-def setupdist(test=True, auto_increase_version_patch=True):
+def setupdist(test=True, auto_increase_version_patch=False):
     if os.path.isdir('dist'):
         shutil.rmtree('dist')
     if auto_increase_version_patch:

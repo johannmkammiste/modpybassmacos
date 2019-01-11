@@ -2,6 +2,8 @@
 
 **Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) folk** to increase ease of installation, import, and use.
 
+`pip install modpybass`
+
 
 #### pybass
 
