@@ -19,7 +19,7 @@ def read(fname):
 
 setup(
     name='modpybass',
-    version='0.0.1',
+    version='0.0.2',
     author='Taehong Kim',
     author_email='peppy0510@hotmail.com',
     description=('modified pybass'),
@@ -27,6 +27,9 @@ setup(
     keywords='bass',
     url='https://github.com/peppy0510/modpybass',
     packages=['modpybass'],
+    package_data={
+         'modpybass': ['lib/x86/*', 'lib/x64/*'],
+    },
     long_description=read('README'),
     classifiers=[
         'Development Status :: Beta',

@@ -17,7 +17,7 @@ def load(name='bass'):
     name = os.path.splitext(os.path.basename(name))[0]
     if name.startswith('py'):
         name = name[2:]
-    lib = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'lib')
+    lib = os.path.join(os.path.dirname(__file__), 'lib')
     architecture = 'x64' if platform.machine().endswith('64') else 'x86'
     extension = ['', '.dll'] if sys.platform.startswith('win') else ['lib', '.so']
     filename = name.join(extension)
@@ -39,4 +39,3 @@ def load(name='bass'):
 
 if __name__ == '__main__':
     bass_module, func_type = load('bass')
-    pass
