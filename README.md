@@ -1,13 +1,9 @@
-modpybass
-======
-
-Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) folk to increase ease of installation, import, and use.
-
-`pip install git+https://github.com/peppy0510/modpybass.git`
 
 
-pybass
-======
+**Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) folk** to increase ease of installation, import, and use.
+
+
+#### pybass
 
 Python BASS Library with ctypes python module for BASS (http://www.un4seen.com).
 
@@ -21,24 +17,23 @@ should also look at the included example program source-codes for some
 examples of how to use BASS in your own programs.
 
 
-Requirements
-============
-Win32 version
--------------
+#### Win32 Requirements
+
 BASS requires DirectX 3 or above for output. BASS does not require that a
 soundcard with DirectSound/DirectSound3D hardware accelerated drivers is
 installed, but it does improve performance if there is one. BASS also takes
 advantage of MMX, which improves the performance of the MOD music playback.
 
-MacOSX version
---------------
+
+#### MacOSX Requirements
+
 OSX 10.3 or above is recommended. BASS uses CoreAudio for output, so there
 are no special library/driver requirements. BASS supports both PowerPC and
 Intel Macs.
 
 
-Main Features
-=============
+#### Main Features
+
 * Samples
   supports WAV/AIFF/MP3/MP2/MP1/OGG and custom generated samples
 
@@ -97,8 +92,8 @@ Main Features
   BASS is under 100KB (on Windows), so won't bloat your distribution
 
 
-Using BASS
-==========
+#### Using BASS
+
 There is no guarantee that all future BASS versions will be compatible
 with all previous versions, so your program should use BASS_GetVersion
 to check the version that is loaded. This also means that you should

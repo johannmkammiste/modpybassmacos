@@ -13,27 +13,30 @@ except ImportError:
 # string in below ...
 
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+def read(filename):
+    with open(os.path.join(os.path.dirname(__file__), filename), 'r') as file:
+        content = file.read()
+    return content
 
 
 setup(
     name='modpybass',
-    version='0.0.2',
+    version='0.0.10',
     author='Taehong Kim',
     author_email='peppy0510@hotmail.com',
-    description=('modified pybass'),
-    license='Apache License 2.0',
-    keywords='bass',
     url='https://github.com/peppy0510/modpybass',
+    description=('modified pybass'),
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    keywords='bass pybass audio',
+    license='Apache License 2.0',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'License :: OSI Approved :: Apache Software License',
+        'Topic :: Multimedia :: Sound/Audio',
+    ],
     packages=['modpybass'],
     package_data={
-         'modpybass': ['lib/x86/*', 'lib/x64/*'],
+        'modpybass': ['lib/x86/*', 'lib/x64/*'],
     },
-    long_description=read('README'),
-    classifiers=[
-        'Development Status :: Beta',
-        'Topic :: Utilities',
-        'License :: OSI Approved :: Apache License',
-    ],
 )
