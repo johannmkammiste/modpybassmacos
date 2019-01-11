@@ -1,6 +1,10 @@
 import os
 
-from setuptools import setup
+
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 
 # Utility function to read the README file.
@@ -14,15 +18,15 @@ def read(fname):
 
 
 setup(
-    name='pybass',
-    version='0.55.0',
-    author='Wyliodrin',
-    author_email='office@wyliodrin.com',
-    description=('libbass functions'),
+    name='modpybass',
+    version='0.0.1',
+    author='Taehong Kim',
+    author_email='peppy0510@hotmail.com',
+    description=('modified pybass'),
     license='Apache License 2.0',
     keywords='bass',
-    url='https://github.com/Wyliodrin/pybass',
-    packages=['pybass'],
+    url='https://github.com/peppy0510/modpybass',
+    packages=['modpybass'],
     long_description=read('README'),
     classifiers=[
         'Development Status :: Beta',
