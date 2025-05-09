@@ -2,7 +2,7 @@
 
 **Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) folk** to increase ease of installation, import, and use. Also updated to allow macOS installation.
 
-`pip install pip install git+https://github.com/johannmkammiste/modpybassmacos.git
+`pip install git+https://github.com/johannmkammiste/modpybassmacos.git
 `
 
 
