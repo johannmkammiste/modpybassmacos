@@ -20,9 +20,9 @@ def load(name='bass'):
     architecture = ''
     if platform.machine().endswith('aarch64'):
         architecture = 'aarch64'
-    if platform.machine().endswith('armhf'):
+    elif platform.machine().endswith('armhf'):
         architecture = 'armhf'
-    if platform.machine().endswith('64'):
+    elif platform.machine().endswith('64'):
         architecture = 'x64'
 
     else:
