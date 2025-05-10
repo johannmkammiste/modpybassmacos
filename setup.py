@@ -21,10 +21,10 @@ def read(filename):
 
 setup(
     name='modpybass',
-    version='0.0.10',
+    version='0.0.11',
     author='Taehong Kim',
-    author_email='peppy0510@hotmail.com',
-    url='https://github.com/peppy0510/modpybass',
+    author_email='johannmkammiste@gmail.com',
+    url='https://github.com/johannmkammiste/modpybassmacos',
     description=('modified pybass'),
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
@@ -37,6 +37,6 @@ setup(
     ],
     packages=['modpybass'],
     package_data={
-        'modpybass': ['lib/x86/*', 'lib/x64/*'],
+        'modpybass': ['lib/x86/*', 'lib/x64/*', 'lib/aarch64/*', 'lib/armhf/*'],
     },
 )
