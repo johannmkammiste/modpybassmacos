@@ -17,7 +17,17 @@ def load(name='bass'):
     if name.startswith('py'):
         name = name[2:]
     lib = os.path.join(os.path.dirname(__file__), 'lib')
-    architecture = 'x64' if platform.machine().endswith('64') else 'x86'
+    architecture = ''
+    if platform.machine().endswith('aarch64'):
+        architecture = 'aarch64'
+    if platform.machine().endswith('armhf'):
+        architecture = 'armhf'
+    if platform.machine().endswith('64'):
+        architecture = 'x64'
+
+    else:
+        architecture = 'x86'
+
 
     system_platform = sys.platform.lower()
 
