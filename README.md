@@ -1,6 +1,6 @@
 
 
-**Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) folk** to increase ease of installation, import, and use. Also updated to allow macOS installation.
+**Wyliodrin's [pybass](https://github.com/wyliodrin/pybass) fork and forked off of peppy0510's [modpybass](https://github.com/peppy0510/modpybass/)** to allow use on ARM based macOS and Linux.
 
 `pip install git+https://github.com/johannmkammiste/modpybassmacos.git
 `
@@ -31,8 +31,11 @@ advantage of MMX, which improves the performance of the MOD music playback.
 #### MacOSX Requirements
 
 OSX 10.3 or above is recommended. BASS uses CoreAudio for output, so there
-are no special library/driver requirements. BASS supports both PowerPC and
-Intel Macs.
+are no special library/driver requirements. BASS supports PowerPC, Intel Macs and ARM Macs.
+
+#### Linux Requirements
+
+ALSA library is required to be installed. Supports ARM and x64 based computers.
 
 
 #### Main Features
