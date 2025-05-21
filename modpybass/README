@@ -1,3 +1,5 @@
+Wyliodrin's pybass fork and forked off of peppy0510's modpybass to allow use on ARM based macOS and Linux.
+
 pybass - is ctypes python module for BASS (http://www.un4seen.com).
 
 BASS is an audio library for use in Windows, Linux and MacOSX software. Its
@@ -22,8 +24,11 @@ advantage of MMX, which improves the performance of the MOD music playback.
 MacOSX version
 --------------
 OSX 10.3 or above is recommended. BASS uses CoreAudio for output, so there
-are no special library/driver requirements. BASS supports both PowerPC and
-Intel Macs.
+are no special library/driver requirements. BASS supports PowerPC, Intel Macs and ARM Macs.
+
+Linux version
+--------------
+ALSA library is required to be installed. Supports ARM and x64 based computers.
 
 
 Main Features
